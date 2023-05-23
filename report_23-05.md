@@ -38,18 +38,24 @@
 ![Output](./Images/Experiments/grid/output_test.png "Output")
 
 
-## Train process
+## Training process
 > Đây là kết quả ảnh sinh được qua các epoch 
 
-### grid
+### metal_nut
 
 |Input                                              |              Output                                 |
 |:-------------------------------------------------:|:---------------------------------------------------:|
-|![](./Images/Experiments/grid/Train/inputs_0.png)  |  ![](./Images/Experiments/grid/Train/outputs_0.png) |
-|![](./Images/Experiments/grid/Train/inputs_20.png)  |  ![](./Images/Experiments/grid/Train/outputs_20.png) |
-|![](./Images/Experiments/grid/Train/inputs_40.png)  |  ![](./Images/Experiments/grid/Train/outputs_40.png) |
-|![](./Images/Experiments/grid/Train/inputs_60.png)  |  ![](./Images/Experiments/grid/Train/outputs_60.png) |
-|![](./Images/Experiments/grid/Train/inputs_80.png)  |  ![](./Images/Experiments/grid/Train/outputs_80.png) |
-|![](./Images/Experiments/grid/Train/inputs_90.png)  |  ![](./Images/Experiments/grid/Train/outputs_90.png) |
+|![](./Images/Experiments/metal_nut/Train/inputs_0.png)  |  ![](./Images/Experiments/metal_nut/Train/outputs_0.png) |
+|![](./Images/Experiments/metal_nut/Train/inputs_20.png)  |  ![](./Images/Experiments/metal_nut/Train/outputs_20.png) |
+|![](./Images/Experiments/metal_nut/Train/inputs_40.png)  |  ![](./Images/Experiments/metal_nut/Train/outputs_40.png) |
+|![](./Images/Experiments/metal_nut/Train/inputs_60.png)  |  ![](./Images/Experiments/metal_nut/Train/outputs_60.png) |
+|![](./Images/Experiments/metal_nut/Train/inputs_80.png)  |  ![](./Images/Experiments/metal_nut/Train/outputs_80.png) |
+|![](./Images/Experiments/metal_nut/Train/inputs_100.png)  |  ![](./Images/Experiments/metal_nut/Train/outputs_100.png) |
+|![](./Images/Experiments/metal_nut/Train/inputs_120.png)  |  ![](./Images/Experiments/metal_nut/Train/outputs_120.png) |
+|![](./Images/Experiments/metal_nut/Train/inputs_140.png)  |  ![](./Images/Experiments/metal_nut/Train/outputs_140.png) |
+|![](./Images/Experiments/metal_nut/Train/inputs_160.png)  |  ![](./Images/Experiments/metal_nut/Train/outputs_160.png) |
+|![](./Images/Experiments/metal_nut/Train/inputs_180.png)  |  ![](./Images/Experiments/metal_nut/Train/outputs_180.png) |
+
+
 
 
