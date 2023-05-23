@@ -57,5 +57,17 @@
 |![](./Images/Experiments/metal_nut/Train/inputs_180.png)  |  ![](./Images/Experiments/metal_nut/Train/outputs_180.png) |
 
 
+### hazelnut
+
+|Input                                              |              Output                                 |
+|:-------------------------------------------------:|:---------------------------------------------------:|
+|![](./Images/Experiments/hazelnut/Train/inputs_0.png)  |  ![](./Images/Experiments/hazelnut/Train/outputs_0.png) |
+|![](./Images/Experiments/hazelnut/Train/inputs_40.png)  |  ![](./Images/Experiments/hazelnut/Train/outputs_40.png) |
+|![](./Images/Experiments/hazelnut/Train/inputs_80.png)  |  ![](./Images/Experiments/hazelnut/Train/outputs_80.png) |
+|![](./Images/Experiments/hazelnut/Train/inputs_120.png)  |  ![](./Images/Experiments/hazelnut/Train/outputs_120.png) |
+|![](./Images/Experiments/hazelnut/Train/inputs_160.png)  |  ![](./Images/Experiments/hazelnut/Train/outputs_160.png) |
+|![](./Images/Experiments/hazelnut/Train/inputs_200.png)  |  ![](./Images/Experiments/hazelnut/Train/outputs_200.png) |
+|![](./Images/Experiments/hazelnut/Train/inputs_240.png)  |  ![](./Images/Experiments/hazelnut/Train/outputs_240.png) |
+|![](./Images/Experiments/hazelnut/Train/inputs_280.png)  |  ![](./Images/Experiments/hazelnut/Train/outputs_280.png) |
 
 
