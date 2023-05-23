@@ -16,12 +16,23 @@
 |Class name      |F1 score       |Accuracy      | AUC          |
 |----------------|--------------|---------------|--------------|
 |metal_nut       |0.894         |0.8            |0.399         |
-|grid            |0.868         |0.769          |0.751        |
-|hazelnut        |0.111         |0.1111         |0.1111        |
+|grid            |0.868         |0.769          |0.751         |
+|hazelnut        |0.778         |0.627          |0.666         |
 
 
 ## Experiments
 
-### Metal nut
+### metal_nut
+![Input](kaitouz/Miniproject/Images/Experiments/metal_nut/input_test.png)
 
+![Output](kaitouz/Miniproject/Images/Experiments/metal_nut/output_test.png)
 
+### hazelnut
+![Input](kaitouz/Miniproject/Images/Experiments/hazelnut/input_test.png)
+
+![Output](kaitouz/Miniproject/Images/Experiments/hazelnut/output_test.png)
+
+### grid
+![Input](kaitouz/Miniproject/Images/Experiments/grid/input_test.png)
+
+![Output](kaitouz/Miniproject/Images/Experiments/grid/output_test.png)
