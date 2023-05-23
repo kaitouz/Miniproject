@@ -46,5 +46,10 @@
 |Input                                              |              Output                                 |
 |:-------------------------------------------------:|:---------------------------------------------------:|
 |![](./Images/Experiments/grid/Train/inputs_0.png)  |  ![](./Images/Experiments/grid/Train/outputs_0.png) |
-|![](./Images/Experiments/grid/Train/inputs_1.png)  |  ![](./Images/Experiments/grid/Train/outputs_1.png) |
+|![](./Images/Experiments/grid/Train/inputs_20.png)  |  ![](./Images/Experiments/grid/Train/outputs_20.png) |
+|![](./Images/Experiments/grid/Train/inputs_40.png)  |  ![](./Images/Experiments/grid/Train/outputs_40.png) |
+|![](./Images/Experiments/grid/Train/inputs_60.png)  |  ![](./Images/Experiments/grid/Train/outputs_60.png) |
+|![](./Images/Experiments/grid/Train/inputs_80.png)  |  ![](./Images/Experiments/grid/Train/outputs_80.png) |
+|![](./Images/Experiments/grid/Train/inputs_90.png)  |  ![](./Images/Experiments/grid/Train/outputs_90.png) |
+
 
