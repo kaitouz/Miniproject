@@ -21,18 +21,19 @@
 
 
 ## Experiments
+> Đây là kết quả ảnh sinh được x_hat (x_hat = Generator(x)) 
 
 ### metal_nut
-![Input](./Images/Experiments/metal_nut/input_test.png)
+![Input](./Images/Experiments/metal_nut/input_test.png "Input")
 
-![Output](./Images/Experiments/metal_nut/output_test.png)
+![Output](./Images/Experiments/metal_nut/output_test.png "Output")
 
 ### hazelnut
-![Input](./Images/Experiments/hazelnut/input_test.png)
+![Input](./Images/Experiments/hazelnut/input_test.png "Input")
 
-![Output](./Images/Experiments/hazelnut/output_test.png)
+![Output](./Images/Experiments/hazelnut/output_test.png "Output")
 
 ### grid
-![Input](./Images/Experiments/grid/input_test.png)
+![Input](./Images/Experiments/grid/input_test.png "Input")
 
-![Output](./Images/Experiments/grid/output_test.png)
+![Output](./Images/Experiments/grid/output_test.png "Output")
