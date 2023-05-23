@@ -36,3 +36,15 @@
 ![Input](./Images/Experiments/grid/input_test.png "Input")
 
 ![Output](./Images/Experiments/grid/output_test.png "Output")
+
+
+## Train process
+> Đây là kết quả ảnh sinh được qua các epoch 
+
+### grid
+
+|Input                                              |              Output                                 |
+|:-------------------------------------------------:|:---------------------------------------------------:|
+|![](./Images/Experiments/grid/Train/inputs_0.png)  |  ![](./Images/Experiments/grid/Train/outputs_0.png) |
+|![](./Images/Experiments/grid/Train/inputs_1.png)  |  ![](./Images/Experiments/grid/Train/outputs_1.png) |
+
