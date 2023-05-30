@@ -23,18 +23,20 @@
 #### Examples
 
 ##### metal_nut
+
 |Input                                              |              Output                                 |
 |:-------------------------------------------------:|:---------------------------------------------------:|
-| ![Input](./Images/Experiments_30-05/STFPM_MVTEC/example_grid.png "Input") | ![Ouput](./Images/Experiments_30-05/STFPM_MVTEC/example_grid_output.png "Ouput") |
+| ![Input](./Images/Experiments_30-05/STFPM_MVTEC/example_metal_nut.png "Input") | ![Ouput](./Images/Experiments_30-05/STFPM_MVTEC/example_metal_nut_output.png "Ouput") |
 
 Score Histogram: Normal (Orange) vs. Anomalous (Blue) Images 
 
 ![Distribution](./Images/Experiments_30-05/STFPM_MVTEC/distribution_grid.png "Ouput")
 
 ##### grid
+
 |Input                                              |              Output                                 |
 |:-------------------------------------------------:|:---------------------------------------------------:|
-| ![Input](./Images/Experiments_30-05/STFPM_MVTEC/example_grid.png "Input") | ![Ouput](./Images/Experiments_30-05/STFPM_MVTEC/example_grid_output.png "Ouput") |
+| ![Input](./Images/Experiments_30-05/STFPM_MVTEC/example_.png "Input") | ![Ouput](./Images/Experiments_30-05/STFPM_MVTEC/example_grid_output.png "Ouput") |
 
 Score Histogram: Normal (Orange) vs. Anomalous (Blue) Images 
 
@@ -52,6 +54,21 @@ Score Histogram: Normal (Orange) vs. Anomalous (Blue) Images
 
 ### Implemetation and evaluation GANomaly Model on Station Dataset
 
+|Dataset         |F1 score       |Accuracy       | AUC          |
+|----------------|---------------|---------------|--------------|
+|Station         |0.6055         |0.5555         |0.6597        |
+
+
+#### Example
+|Input                                              |              Output                                 |
+|:-------------------------------------------------:|:---------------------------------------------------:|
+| ![Input](./Images/Experiments_30-05/GANomaly_Station/input_normal.png "Input") | ![Ouput](./Images/Experiments_30-05/GANomaly_Station/output_normal.png "Ouput") |
+| ![Input](./Images/Experiments_30-05/GANomaly_Station/input_anormaly.png "Input") | ![Ouput](./Images/Experiments_30-05/GANomaly_Station/output_anormaly.png "Ouput") |
+
+Score Histogram: Normal (Orange) vs. Anomalous (Blue) Images 
+
+![Distribution](./Images/Experiments_30-05/GANomaly_Station/distribution.png "Ouput")
+
 
 ### Implemetation and evaluation STFPM Model on Station Dataset
 
@@ -63,7 +80,11 @@ Score Histogram: Normal (Orange) vs. Anomalous (Blue) Images
 #### Example
 |Input                                              |              Output                                 |
 |:-------------------------------------------------:|:---------------------------------------------------:|
-| ![Input](./Images/Experiments_30-05/STFPM_MVTEC/example_grid.png "Input") | ![Ouput](./Images/Experiments_30-05/STFPM_MVTEC/example_grid_output.png "Ouput") |
+| ![Input](./Images/Experiments_30-05/STFPM_Station/example_station.png "Input") | ![Ouput](./Images/Experiments_30-05/STFPM_Station/example_station_output.png "Ouput") |
+
+Score Histogram: Normal (Orange) vs. Anomalous (Blue) Images 
+
+![Distribution](./Images/Experiments_30-05/STFPM_Station/distribution_station.png "Ouput")
 
 
 ## Upcoming Tasks for the Following Week
