@@ -33,14 +33,19 @@ Có thể chia cấu trúc của GANomaly thành 3 thành phần chính:
 - Bộ mã hóa (encoder) thứ hai, ánh xạ ảnh sau khi tạo bởi phần sinh thành một không gian các đặc trưng tiềm ẩn (latent space) - $z'$.
 
 Trong quá trình đào tạo, hàm mục tiêu của mô hình là kết hợp của ba hàm mất mát sau:
-- Adversarial Loss: là khoảng cách L2 giữa biểu diễn đặc trưng của ảnh gốc $x$ và biểu diễn đặc trưng của ảnh được tạo bởi phần sinh generator $G(x)$. Trong hàm mất mát này, $f(x)$ là đầu ra của bộ phân loại của phần phân biệt (discriminator): $$\mathcal{L}_{adv} = \mathbb{E}_{x \sim p_x}\left \| f(x) - \mathbb{E}_{x \sim p_x}f(G(x)) \right \|_2.$$
-- Contextual Loss: là khoảng cách L1 giữa đầu vào ban đầu $x$ và hình ảnh được tạo $G(x)$. Hàm mất mát này giúp hàm mục tiêu có thêm thông tin về ngữ cảnh của đầu vào:$$\mathcal{L}_{con} = \mathbb{E}_{x \sim p_x}\left \| x - G(x) \right \|_1.$$
+- Adversarial Loss: là khoảng cách L2 giữa biểu diễn đặc trưng của ảnh gốc $x$ và biểu diễn đặc trưng của ảnh được tạo bởi phần sinh generator $G(x)$. Trong hàm mất mát này, $f(x)$ là đầu ra của bộ phân loại của phần phân biệt (discriminator):
+ $\mathcal{L}_{adv} = \mathbb{E}_{x \sim p_x}\left \| f(x) - \mathbb{E}_{x \sim p_x}f(G(x)) \right \|_2.$
+- Contextual Loss: là khoảng cách L1 giữa đầu vào ban đầu $x$ và hình ảnh được tạo $G(x)$. Hàm mất mát này giúp hàm mục tiêu có thêm thông tin về ngữ cảnh của đầu vào:
+$\mathcal{L}_{con} = \mathbb{E}_{x \sim p_x}\left \| x - G(x) \right \|_1.$
 
-- Encoder Loss: là khoảng cách L2 giữa các không gian đặc trưng tiềm ẩn của đầu vào $z$ và của hình ảnh được tạo bằng bộ sinh $z'$. Với hàm mất mát này, phần sinh (generator) sẽ được hướng dẫn để hiểu cách mã hóa các đặc trưng của các mãu bình thường: $$\mathcal{L}_{enc} = \mathbb{E}_{x \sim p_x}\left \| G_{E}(x) - E(G(x)) \right \|_2.$$
+- Encoder Loss: là khoảng cách L2 giữa các không gian đặc trưng tiềm ẩn của đầu vào $z$ và của hình ảnh được tạo bằng bộ sinh $z'$. Với hàm mất mát này, phần sinh (generator) sẽ được hướng dẫn để hiểu cách mã hóa các đặc trưng của các mãu bình thường:
+ $\mathcal{L}_{enc} = \mathbb{E}_{x \sim p_x}\left \| G_{E}(x) - E(G(x)) \right \|_2.$
 
-Và hàm mục tiêu được xác định với việc thêm trọng số vào các hàm mất mát trên:$$\mathcal{L} = w_{adv}\mathcal{L}_{adv} + w_{con}\mathcal{L}_{con} + w_{enc}\mathcal{L}_{enc} $$
+Và hàm mục tiêu được xác định với việc thêm trọng số vào các hàm mất mát trên:
+$\mathcal{L} = w_{adv}\mathcal{L}_{adv} + w_{con}\mathcal{L}_{con} + w_{enc}\mathcal{L}_{enc} $
 
-Trong quá trình kiểm thử, độ bất thường của ảnh thử nghiệm được định nghĩa theo hàm Encoder Loss: $$ \mathcal{A}(\hat{x}) = \left \| G_{E}(\hat{x}) - E(G(\hat{x})) \right \|_1$$
+Trong quá trình kiểm thử, độ bất thường của ảnh thử nghiệm được định nghĩa theo hàm Encoder Loss: 
+$ \mathcal{A}(\hat{x}) = \left \| G_{E}(\hat{x}) - E(G(\hat{x})) \right \|_1$
 
 ## 2.2 Feature Embedding based Methods
 ### 2.2.1 STFPM - Student-Teacher Feature Pyramid Matching for Anomaly Detection
