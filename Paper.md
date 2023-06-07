@@ -14,7 +14,7 @@ Dựa trên các thuật toán đã được phát triển và thử nghiệm tr
 
 Các phương pháp này dựa trên việc tự đạo tạo bộ mã hóa (encoder) và bộ giải mã (decoder) để tái tạo hình ảnh nhằm phát hiện những điểm bất thường. Tuy nhiên, khả năng phân loại ảnh của nó kém, do không thể trích xuất được các đặc trưng có tính ngữ nghĩa cao (highlevel semantic features).
 
-![Fig1](./Images/paper/resconstruction.png "Input") 
+![Fig1](./Images/paper/reconstruction.png "Input") 
 Fig 1. Cấu trúc của các mô hình phát hiện bất thường bằng phương pháp tái tạo.
 
 Cấu trúc của các mô hình thuộc phương pháp tái tạo được mô tả trong hình [1]. Trong quá trình đào tạo, các hình ảnh bất thường sẽ được gửi đến mạng tái tạo (reconstruction network) và hàm mất mát của quá trình này sẽ được sử dụng để cải thiện khả năng tái tạo của mạng. Trong quá trình kiểm thử, để có thể đưa ra dự đoán, mô hình sẽ so sánh ảnh gốc với ảnh được tái tạo. Các mô hình trong phương pháp này chủ yếu sẽ khác nhau ở việc xây các mạng tái tạo (reconstruction network). Phần lớn các phương pháp này dựa trên việc tự đào tạo từ đầu mà không sử dụng các mô hình pre-trained, dẫn đến hiệu suất kém hơn so với mô hình ở nhóm phương pháp feature-embedding.
@@ -53,18 +53,23 @@ Kiến trúc của phương pháp này gồm hai mạng là giáo viên và họ
 Trong quá trình đào tạo, mạng "giáo viên" sẽ "truyền đạt", hướng dẫn cho mạng học sinh các kiến thức về trích chọn đặc trưng của ảnh trên tập đầu vào là các hình ảnh được gán nhãn bình thường. Và trong quá trình suy luận, các đặc điểm về mẫu bất thường được trích xuất từ mạng học sinh và giáo viên sẽ tương đương nhau, trong khi các đặc điểm được trích xuất từ ảnh bất thường sẽ khác biệt. Bằng cách so sánh bản đồ đặc trưng (feature maps) được tạo bởi hai mạng, ta có thể tạo ra được bản đồ các điểm bất thường.
 
 # 3. Expriments setup
-Trong phần này, chúng tôi sẽ giới thiệu về các tập dữ liệu đã được dùng để đánh giá và kết quả của việc huấn luyện các mô hình trên các tập dữ liệu đó.
+??? Trong phần này, chúng tôi sẽ giới thiệu về các tập dữ liệu đã được dùng để đánh giá và kết quả của việc huấn luyện các mô hình trên các tập dữ liệu đó.
 ## 3.1 Dataset
 **MVTec**, chúng tôi đã tiến hành thử nghiệm các mô hình trên tập dữ liệu MVTec Anomaly Detection (MVTec AD). ....
 **Bộ dữ liệu nhà trạm của Viettel**, 
 
-# 5.Kết quả
+# 4.Kết quả
 ## 4.2 Kết quả GANomaly và STFPM trên tập dữ liệu MVTec AD
-Trong thí nghiệm này, chúng tôi đã huấn luyện và đánh giá hai mô hình GANomaly và STFPM trên tập dữ liệu MVTec. Kết quả là STFPM hoàn toàn vượt trội trên tập MVTEC 
+??? Trong thí nghiệm này, chúng tôi đã huấn luyện và đánh giá hai mô hình GANomaly và STFPM trên tập dữ liệu MVTec. Kết quả là STFPM hoàn toàn vượt trội trên tập MVTEC 
 ![Fig3](./Images/paper/test_result.png "Input") 
 
 
 ## 4.3 Kết quả GANomaly và STFPM trên tập dữ liệu nhà trạm của Viettel
 
 #  Discussion
-??? Kết quả của các thí nghiệm trên chưa phản ánh được đầy đủ khả năng của các mạng Đối sinh (GANs) trong bài toán phát hiện bất thường, do giới hạn của.... Bên cạnh đó, quá trình để huấn luyện GANs cũng là một thách thức lớn. Để có thể đảm bảo được hai phần mạng sinh (generator) và mạng phân loại (discriminator) có thể ổn định học song song với nhau thì cần phải lựa chọn các siêu tham số một cách cẩn thận sao cho tốc độ học của hai mạng này đồng đều nhau. Vì vậy các nghiên cứu ở trong tương lai, 
+??? Kết quả của các thí nghiệm trên chưa phản ánh được đầy đủ khả năng của các mạng Đối sinh (GANs) trong bài toán phát hiện bất thường, do giới hạn của.... Bên cạnh đó, quá trình để huấn luyện GANs cũng là một thách thức lớn. Để có thể đảm bảo được hai phần mạng sinh (generator) và mạng phân loại (discriminator) có thể ổn định học song song với nhau thì cần phải lựa chọn các siêu tham số một cách cẩn thận sao cho tốc độ học của hai mạng này đồng đều nhau. Vì vậy các nghiên cứu ở trong tương lai, chúng tôi sẽ phát triển dựa trên nhóm phương pháp tái tạo (reconstruction) nhưng sử dụng các mô hình sinh ảnh tốt hơn ví dụ như diffusion....
+
+# 5. Kết luận
+???? 
+
+# References
