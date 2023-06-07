@@ -1,0 +1,28 @@
+experiment_name : 'STFPM'
+experiment_path : './Experiments/STFPM/mvtec/bottle'
+dataroot : './Datasets/mvtec/zipper'
+resume : False
+weight_path : "./Experiments/snapshots/zipper/best.pth.tar"
+checkpoint_save : "./Experiments/STFPM/mvtec/carpet"
+checkpoint_load : "./Experiments/STFPM/mvtec/carpet"
+log_path : "./Experiments/STFPM/mvtec/carpet/carpet.log"
+start_epoch : 1
+finish_epoch : 200
+manualseed : 42
+
+batchSize : 32
+imageSize_h : 256
+imageSize_w : 256
+lossSize_h : 64
+lossSize_w : 64
+
+device : 'gpu'
+gpu_ids : 0
+ngpu : 1
+
+lr : 0.4
+momentum : 0.9
+weight_decay : 1e-4
+
+
+sample_interval : 20

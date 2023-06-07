@@ -1,0 +1,30 @@
+experiment_name : 'hazelnut'
+experiment_path : './Experiments/GANomaly_mvtec/grid_200'
+dataroot : './Datasets/mvtec/grid'
+checkpoint_save : "./Experiments/GANomaly_mvtec/grid_200/checkpoint"
+checkpoint_load : "./Experiments/GANomaly_mvtec/grid_200/checkpoint/checkpoint_best.pt"
+log_path : "./Experiments/GANomaly_mvtec/hazelnut/hazelnut.log"
+start_epoch : 1
+finish_epoch : 200
+manualseed : 42
+
+batchSize : 64
+imageSize_h : 64
+imageSize_w : 64
+nc : 3
+nz : 100
+ngf : 64
+n_extra_layers : 0
+
+device : 'gpu'
+gpu_ids : 0
+ngpu : 1
+
+lr : 0.0001
+b1 : 0.5
+b2 : 0.999
+w_adv : 1
+w_con : 40
+w_lat : 1
+reset_disc_value : 1e-6
+sample_interval : 20

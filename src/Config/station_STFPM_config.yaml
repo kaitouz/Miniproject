@@ -1,0 +1,31 @@
+experiment_name : 'station'
+experiment_path : './Experiments/STFPM/station_258x192_200_norm'
+dataroot : './Datasets/station'
+resume : False
+weight_path : "./Experiments/STFPM/station/best.pth.tar"
+checkpoint_save : "./Experiments/STFPM/station_258x192_200_norm/checkpoint"
+checkpoint_load : "./Experiments/STFPM/station_258x192_200_norm/checkpoint/checkpoint_best.pt"
+log_path : "./Experiments/STFPM/station_258x192_200_norm2/station.log"
+
+start_epoch : 1
+finish_epoch : 200
+manualseed : 42
+
+batchSize : 64
+imageSize_h : 258
+imageSize_w : 192
+lossSize_h : 86
+lossSize_w : 64
+
+device : 'gpu'
+gpu_ids : 0
+ngpu : 1
+
+lr : 0.4
+momentum : 0.9
+weight_decay : 1e-4
+
+
+
+
+sample_interval : 20
